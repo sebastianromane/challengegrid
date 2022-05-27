@@ -1,0 +1,103 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    min-height: 100vh;
+}
+
+.grid_container{
+    display: flex;
+    display: grid;
+    grid-template-areas:
+    "navbar navbar navbar navbar"
+    "sidebar cards cards cards"
+    "footer footer footer footer";
+
+     grid-template-columns:1fr 2fr 2fr 2fr;
+     grid-template-rows: 5% 90% 5%;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: navbar;
+    background-color: #1587e4;
+    color: antiquewhite;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-image: url(https://www.deanime.info/wp-content/uploads/2019/03/goku-peque%C3%B1o-y-shenron-fondo-3d-animado-db.jpg);
+    background-size: 90%;
+    width: 20vw;
+}
+
+.sidebar ul{
+    list-style: none;
+}
+
+.sidebar h2{
+    padding-inline-start: 14%;
+}
+
+
+.cards{
+    grid-area: cards;
+    display: flex;
+    justify-content:space-between;
+    background-image: url(https://fondosmil.com/fondo/24631.jpg);
+    flex-wrap:wrap;
+    width: 80vw;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 20vw;
+    height:40vh ;
+    margin-top: 1%;
+    margin-left: 5%;
+}
+
+.box img{
+    display: flex;
+    width: 55%;
+    margin-top: 5%;
+
+    
+}
+
+.box h2{
+    margin: 0%;
+    padding: 1%;
+    color: yellow;
+}
+
+.box p{
+    margin: 0%;
+    padding: 1%;
+    color: yellow;
+}
+
+.buttom{
+    margin: 0%;
+    padding: 1%;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: #0c033f;
+    color: white;
+
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: footer;
+    background-color: #cc9807;
+    color: white;
+}
